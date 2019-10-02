@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Binn"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giới tính" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:checked="true"
+            android:id="@+id/rbtn_gay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="là Gay" />
+
+        <RadioButton
+            android:id="@+id/rbtn_gay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="vẫn là Gay" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sở thích" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/cb_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="yêu màu tím" />
+
+        <CheckBox
+            android:id="@+id/cb_hong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="thích màu hồng" />
+
+        <CheckBox
+            android:id="@+id/cb_noitam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sống nội tâm" />
+
+        <CheckBox
+            android:id="@+id/cb_khoctham"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="hay khóc thầm" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/ibtn_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:src="@mipmap/ic_launcher" />
+
+</LinearLayout>
